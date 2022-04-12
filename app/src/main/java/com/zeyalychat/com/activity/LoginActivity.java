@@ -166,8 +166,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                 break;
             case R.id.forgot_lt_R:
-                Intent intent = new Intent(LoginActivity.this, MobileVerficationActivity.class);
-                startActivity(intent);
+              /*  Intent intent = new Intent(LoginActivity.this, MobileVerficationActivity.class);
+                startActivity(intent);*/
                 break;
         }
 

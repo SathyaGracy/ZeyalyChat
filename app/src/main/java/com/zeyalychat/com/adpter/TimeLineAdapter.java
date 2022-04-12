@@ -1,5 +1,6 @@
 package com.zeyalychat.com.adpter;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.res.ColorStateList;
@@ -16,7 +17,6 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.zeyalychat.com.R;
-import com.zeyalychat.com.activity.TimeLineListActivity;
 import com.zeyalychat.com.bean.TimeLineBean;
 import com.zeyalychat.com.databinding.TimeLineRowBinding;
 import com.zeyalychat.com.session.Session;
@@ -25,16 +25,20 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.ViewHolder> {
+
     public ArrayList<TimeLineBean> mDataset;
     private Activity mContext;
     Dialog dialog;
     TimeLineRowBinding binding = null;
     Session session;
     String ans="";
+    OnItemClickListener listener;
 
-    public TimeLineAdapter(Activity mContext, ArrayList<TimeLineBean> myDataset) {
+
+    public TimeLineAdapter(Activity mContext, ArrayList<TimeLineBean> myDataset,OnItemClickListener listener) {
         this.mDataset = myDataset;
         this.mContext = mContext;
+        this.listener = listener;
 
 
     }
@@ -50,7 +54,7 @@ public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.ViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         TimeLineBean timeLineBean = mDataset.get(position);
         binding.headingTxt.setText(timeLineBean.getCreated_by_name());
         binding.lastmessage.setText(timeLineBean.getCreated_date());
@@ -74,21 +78,21 @@ public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.ViewHo
         binding.likeRl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mContext instanceof TimeLineListActivity) {
+
                     if (timeLineBean.isIslike()) {
-                        ((TimeLineListActivity) mContext).unike(timeLineBean.getId(), position);
+                       listener.unlike(timeLineBean.getId(), position);
                         binding.liketxt.setTextColor(ContextCompat.getColor(mContext, R.color.medium_text_color));
                         ImageViewCompat.setImageTintList(binding.imgLike, ColorStateList.valueOf(ContextCompat.getColor(mContext, R.color.medium_text_color)));
 
                     } else {
 
-                        ((TimeLineListActivity) mContext).CreateLike(timeLineBean.getId(), position);
+                        listener.CreateLike(timeLineBean.getId(), position);
                         ImageViewCompat.setImageTintList(binding.imgLike, ColorStateList.valueOf(ContextCompat.getColor(mContext, R.color.green)));
                         binding.liketxt.setTextColor(ContextCompat.getColor(mContext, R.color.green));
 
 
                     }
-                }
+
             }
         });
         binding.commentEdt.addTextChangedListener(new TextWatcher() {
@@ -109,12 +113,12 @@ public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.ViewHo
             @Override
             public void onClick(View v) {
 
-                if (mContext instanceof TimeLineListActivity) {
+
                     if (!ans.equalsIgnoreCase("")) {
-                        ((TimeLineListActivity) mContext).CreateComment(ans, timeLineBean.getId(), position);
+                        listener.postComment(ans, timeLineBean.getId(), position);
                        // binding.addCommentEdt.setText("");
                     }
-                }
+
             }
         });
 
@@ -138,6 +142,11 @@ public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.ViewHo
     @Override
     public int getItemViewType(int position) {
         return 1;
+    }
+    public interface OnItemClickListener {
+        void postComment(String comment, String id, int pos);
+        void unlike(String id, int pos);
+        void CreateLike(String id, int pos);
     }
 
 }

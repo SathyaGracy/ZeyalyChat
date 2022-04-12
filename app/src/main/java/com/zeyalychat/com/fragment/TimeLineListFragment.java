@@ -1,14 +1,14 @@
-package com.zeyalychat.com.activity;
+package com.zeyalychat.com.fragment;
 
 import android.annotation.SuppressLint;
-import android.content.pm.ActivityInfo;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.androidnetworking.AndroidNetworking;
@@ -21,7 +21,6 @@ import com.zeyalychat.com.bean.TimeLineBean;
 import com.zeyalychat.com.databinding.TimeLineBinding;
 import com.zeyalychat.com.session.Session;
 import com.zeyalychat.com.utils.SectoDate;
-import com.zeyalychat.com.utils.TransistionAnimation;
 import com.zeyalychat.com.utils.URLHelper;
 
 import org.json.JSONArray;
@@ -30,34 +29,33 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class TimeLineListActivity extends AppCompatActivity implements View.OnClickListener {
+public class TimeLineListFragment extends Fragment implements View.OnClickListener, TimeLineAdapter.OnItemClickListener {
     TimeLineBinding binding;
     TimeLineAdapter timeLineAdapter;
     ArrayList<TimeLineBean> timeLineBeanArrayList;
     Session session;
     SectoDate sectoDate;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.time_line);
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        }
-        TransistionAnimation transistionAnimation = new TransistionAnimation();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setSharedElementEnterTransition(transistionAnimation.enterTransition());
-            getWindow().setSharedElementReturnTransition(transistionAnimation.returnTransition());
-        }
-        intView();
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        //   View view = inflater.inflate(R.layout.fragment_bronze, container, false);
+        binding = DataBindingUtil.inflate(inflater, R.layout.time_line, container, false);
+
+
+        intView();
+        // getActivity().registerReceiver(broadcastReceiver, new IntentFilter("INTERNET_LOST"));
+
+        return binding.getRoot();
     }
 
     @SuppressLint("RestrictedApi")
     private void intView() {
-        session = new Session(TimeLineListActivity.this);
-        sectoDate = new SectoDate(TimeLineListActivity.this);
-        binding.timelinerecyclerview.setLayoutManager(new LinearLayoutManager(TimeLineListActivity.this, LinearLayoutManager.VERTICAL, true));
+        session = new Session(getActivity());
+        sectoDate = new SectoDate(getActivity());
+        binding.timelinerecyclerview.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, true));
         timeLineBeanArrayList = new ArrayList<>();
         onItemClickListener();
         timeLineList();
@@ -87,7 +85,7 @@ public class TimeLineListActivity extends AppCompatActivity implements View.OnCl
 
                     }
                 }));*/
-        binding.backArraow.setOnClickListener(this);
+        binding.backArraow.setVisibility(View.GONE);
         binding.postLayout.setOnClickListener(this);
 
 
@@ -97,7 +95,7 @@ public class TimeLineListActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.backArraow:
-                finish();
+
                 break;
             case R.id.post_layout:
                 CreatePost();
@@ -213,9 +211,8 @@ public class TimeLineListActivity extends AppCompatActivity implements View.OnCl
                         Log.i("onResponse: ", jsonObject.toString());
                         //binding.postEdt.setText("");
                         timeLineBeanArrayList.get(pos).setComments_count(timeLineBeanArrayList.get(pos).getComments_count() + 1);
-                        timeLineAdapter = new TimeLineAdapter(TimeLineListActivity.this, timeLineBeanArrayList);
-                        binding.timelinerecyclerview.setAdapter(timeLineAdapter);
 
+                        AdapterCall(timeLineBeanArrayList);
                       /*  try {
                             JSONObject type = jsonObject.getJSONObject("type");
                             JSONObject created_by = jsonObject.getJSONObject("created_by");
@@ -265,10 +262,29 @@ public class TimeLineListActivity extends AppCompatActivity implements View.OnCl
 
                     }
                 });
+
+    }
+private void AdapterCall(ArrayList<TimeLineBean> timeLineBeanArrayList){
+    timeLineAdapter = new TimeLineAdapter(getActivity(), timeLineBeanArrayList,this);
+    binding.timelinerecyclerview.setAdapter(timeLineAdapter);
+}
+
+    @Override
+    public void postComment(String comment, String id, int pos) {
+       CreateComment(comment,id,pos);
     }
 
+    @Override
+    public void unlike(String id, int pos) {
+        unike(id, pos);
+    }
 
+    @Override
     public void CreateLike(String id, int pos) {
+        Like(id, pos);
+    }
+
+    public void Like(String id, int pos) {
         AndroidNetworking.post(URLHelper.like + id + "&type=1")
                 /*    .addMultipartFile("img",imgFile)*/
 
@@ -283,8 +299,7 @@ public class TimeLineListActivity extends AppCompatActivity implements View.OnCl
                         //binding.postEdt.setText("");
                         timeLineBeanArrayList.get(pos).setIslike(true);
                         timeLineBeanArrayList.get(pos).setLikes_count(timeLineBeanArrayList.get(pos).getLikes_count() + 1);
-                        timeLineAdapter = new TimeLineAdapter(TimeLineListActivity.this, timeLineBeanArrayList);
-                        binding.timelinerecyclerview.setAdapter(timeLineAdapter);
+                        AdapterCall(timeLineBeanArrayList);
 
 
                       /*  try {
@@ -353,8 +368,7 @@ public class TimeLineListActivity extends AppCompatActivity implements View.OnCl
 
                         timeLineBeanArrayList.get(pos).setIslike(false);
                         timeLineBeanArrayList.get(pos).setLikes_count(timeLineBeanArrayList.get(pos).getLikes_count() - 1);
-                        timeLineAdapter = new TimeLineAdapter(TimeLineListActivity.this, timeLineBeanArrayList);
-                        binding.timelinerecyclerview.setAdapter(timeLineAdapter);
+                        AdapterCall(timeLineBeanArrayList);
                       /*  try {
                             JSONObject type = jsonObject.getJSONObject("type");
                             JSONObject created_by = jsonObject.getJSONObject("created_by");
@@ -451,8 +465,7 @@ public class TimeLineListActivity extends AppCompatActivity implements View.OnCl
                                 timeLineBean.setIslike(false);
                                 timeLineBeanArrayList.add(timeLineBean);
                             }
-                            timeLineAdapter = new TimeLineAdapter(TimeLineListActivity.this, timeLineBeanArrayList);
-                            binding.timelinerecyclerview.setAdapter(timeLineAdapter);
+                            AdapterCall(timeLineBeanArrayList);
 
 
                         } catch (
@@ -478,7 +491,6 @@ public class TimeLineListActivity extends AppCompatActivity implements View.OnCl
                     }
                 });
     }
-
 
 
 }

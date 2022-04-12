@@ -1,5 +1,6 @@
 package com.zeyalychat.com.adpter;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.view.LayoutInflater;
@@ -12,13 +13,13 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
 import com.zeyalychat.com.Database.DatabaseHelper;
 import com.zeyalychat.com.Database.UserInfoDB;
 import com.zeyalychat.com.R;
 import com.zeyalychat.com.activity.MainActivity;
 import com.zeyalychat.com.databinding.MultiLogRowBinding;
 import com.zeyalychat.com.session.Session;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -53,7 +54,7 @@ public class MultiloginAdapter extends RecyclerView.Adapter<MultiloginAdapter.Vi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         UserInfoDB userInfo = mDataset.get(position);
         if (position == 0) {
             binding.v1.setVisibility(View.VISIBLE);

@@ -1,5 +1,9 @@
 package com.zeyalychat.com.activity;
 
+
+
+import static com.zeyalychat.com.Application.trimMessage;
+
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
@@ -35,6 +39,7 @@ import com.zeyalychat.com.utils.SectoDate;
 import com.zeyalychat.com.utils.TransistionAnimation;
 import com.zeyalychat.com.utils.URLHelper;
 
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -42,8 +47,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
-import static com.zeyalychat.com.Application.trimMessage;
 
 public class MessageConversationActivity extends AppCompatActivity implements View.OnClickListener {
     ConversationlistBinding binding;

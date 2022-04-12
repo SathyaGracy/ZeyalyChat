@@ -174,8 +174,8 @@ public class LogInActivityNew extends AppCompatActivity implements View.OnClickL
                 break;
 
             case R.id.forgot_lt_R:
-                Intent forgot = new Intent(LogInActivityNew.this, MobileVerficationActivity.class);
-                startActivity(forgot);
+                /*Intent forgot = new Intent(LogInActivityNew.this, MobileVerficationActivity.class);
+                startActivity(forgot);*/
                 break;
         }
     }

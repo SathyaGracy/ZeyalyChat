@@ -10,10 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
 import com.zeyalychat.com.R;
 import com.zeyalychat.com.bean.ChatListBean;
 import com.zeyalychat.com.databinding.ChatListAdapterBinding;
-import com.squareup.picasso.Picasso;
+
 
 import java.util.ArrayList;
 
