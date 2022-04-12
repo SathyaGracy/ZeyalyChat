@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Classmate</string>
+    <string name="login">Log In</string>
+    <string name="logintocontinue">Sign In to Continue</string>
+    <string name="welcome">Welcome</string>
+    <string name="loginAct">Login to continue your account</string>
+    <string name="password_reset">Set Password</string>
+    <string name="signup">Sign UP</string>
+    <string name="userName">User Name</string>
+    <string name="EmailAddress">Email Address</string>
+    <string name="EmailId_mobileno">Email or Phone</string>
+    <string name="Password">Password</string>
+    <string name="Forgotpassword">Forgot password</string>
+    <string name="Mobile">Mobile Number</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="enter_user_name">Enter UserName</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_mobileNo">Enter Mobile Number</string>
+    <string name="mobile_verification">Mobile Verification</string>
+    <string name="mobile_number">Please enter your mobile number </string>
+    <string name="mobileNo">Mobile Number</string>
+    <string name="mismatch">Password Mismatch</string>
+    <string name="resend_Code">Resend Code</string>
+    <string name="invaild">Invalid Credential</string>
+    <string name="receive_otp">Don\'t Receive the OTP?</string>
+    <string name="otp">We have sent you access code via SMS for mobile number verification</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_valid_email">Invalid Email</string>
+    <string name="password_must_six_characters">Contain at least 6 Character</string>
+    <string name="already_have_acc">Already have an account</string>
+    <string name="do_not_have_acc">Don\'t you have an account?</string>
+    <string name="Please_Connect_Network">Oops! it seems that you are out of internet connectivity.</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="Profile">Profile</string>
+    <string name="Attendance">Attendance</string>
+
+    <string name="Result">Result</string>
+    <string name="homework">Home Work</string>
+    <string name="timetable">Time Table</string>
+    <string name="exam">Exam</string>
+    <string name="fee">Fees</string>
+    <string name="holiday">Holiday</string>
+    <string name="timeTable">Time Table</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="remove_act">Remove  Account</string>
+    <string name="remove_actl">Remove</string>
+    <string name="manage_act">Manage Account</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="HomeWork">Home Work</string>
+    <string name="Leave">Leave</string>
+    <string name="audio">Audio</string>
+    <string name="sms">SMS</string>
+    <string name="See_all">See all</string>
+    <string name="App">App</string>
+    <string name="Support">Support</string>
+    <string name="Account_Settings">Account Settings</string>
+    <string name="Notification_Sound">Notification &amp; Sound</string>
+    <string name="Meeting">Meetings</string>
+
+    <string name="add_another_account">Add another account</string>
+   <!-- <string name="google_map_key">AIzaSyAjk-phc0X5IQrbz5W0xBpUE1Q7LxKODqc</string>-->
+    <string-array name="custom_weekdays">
+        <item>M</item>
+        <item>Tu</item>
+        <item>W</item>
+        <item>Th</item>
+        <item>F</item>
+        <item>Sa</item>
+        <item>Su</item>
+    </string-array>
+
+    <string-array name="custom_months">
+        <item>JAN</item>
+        <item>Feb</item>
+        <item>MARCH</item>
+        <item>April</item>
+        <item>MAY</item>
+        <item>June</item>
+        <item>JULY</item>
+        <item>Aug</item>
+        <item>SEPT</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>DEC</item>
+    </string-array>
+
+    <string name="hi">Hi </string>
+    <string name="home">Home</string>
+    <string name="Chat">Chat</string>
+    <string name="TimeTable">Time Table</string>
+    <string name="DashBoard">Timeline</string>
+    <string name="eLearning">e-Learning</string>
+    <string name="Name">Name</string>
+    <string name="MorningSession">Morning </string>
+    <string name="NoonSession">Noon </string>
+    <string name="SelectSection">Select Section</string>
+    <string name="ddmmyyyy">dd/mm/yyyy</string>
+    <string name="AddAttendance">Add Attendance</string>
+    <string name="Section">Section : </string>
+    <string name="Session">Session : </string>
+
+
+    <string name="Date">Date :</string>
+
+    <string name="Submit">Submit</string>
+
+    <string name="SelectContact">Select Contact</string>
+    <string name="Total">Total : </string>
+    <string name="AddHomeWork">Add HomeWork</string>
+    <string name="Type">Type : </string>
+
+    <string name="Title">Title  </string>
+
+    <string name="To">To :  </string>
+    <string name="Subject">Subject :  </string>
+
+    <string name="SelectHomeWork">Select Home Work</string>
+    <string name="SelectSubject">Select Subject</string>
+    <string name="CompletionDate">Completion Date : </string>
+
+    <string name="Descreption">Descreption : </string>
+
+    <string name="ApplyLeave">Apply Leave</string>
+    <string name="LeaveType">Leave Type :</string>
+    <string name="SelectLeaveType">Select Leave Type</string>
+    <string name="FromDate">From Date : </string>
+    <string name="ToDate">To Date :</string>
+    <string name="Reason">Reason :</string>
+
+    <string name="Typehere">Type here…</string>
+
+    <string name="Section_w">Section </string>
+    <string name="Details">Details </string>
+    <string name="StudentID">Student ID </string>
+    <string name="DateOfBirth">Date Of Birth</string>
+    <string name="BloodGroup">Blood Group</string>
+    <string name="Address">Address</string>
+    <string name="Parent">Parent</string>
+    <string name="Createpost">Create post</string>
+    <string name="PhotosVideos">Photos/Videos</string>
+    <string name="Writesomethinghere">Write something here..</string>
+    <string name="AddEmojis">Add Emojis</string>
+    <string name="All">All</string>
+    <string name="Post">Post</string>
+    <string name="Language">Language</string>
+    <string name="TodayTimetable">Today\'s Timetable</string>
+
+    <string name="Assignment">Assignment</string>
+    <string name="ELearning">E-Learning</string>
+    <string name="Seeall">See All</string>
+    <string name="tamil">Tamil</string>
+    <string name="english">English</string>
+
+    <string name="Class">Class</string>
+
+
+    <string name="Add_exam">Add Exam</string>
+    <string name="TotalMarks">Total Marks</string>
+    <string name="ExamRoom">Exam Room</string>
+    <string name="timefrom">Start Time</string>
+    <string name="timeto">End Time</string>
+    <string name="questions">Questions</string>
+    <string name="chooseFile">Choose a File</string>
+    <string name="File">File</string>
+    <string name="uploadHomeWork">Upload HomeWork</string>
+    <string name="upload">Upload </string>
+    <string name="Attachments">Attachments</string>
+    <string name="Min">Min Mark</string>
+    <string name="Max">Max Mark</string>
+    <string name="exam_procedure">Exam Procedure</string>
+    <string name="time">Time</string>
+
+    <string name="app_info">This is a sample application to record audio.\n\nTo start recording press \&quot;Record\&quot; button, to stop recording press \&quot;Stop\&quot; button.</string>
+
+    <string name="choose_format_title">Choose Audio Format</string>
+    <string name="start_recording">Record</string>
+    <string name="stop_recording">Stop</string>
+    <string name="audio_format">Format</string>
+    <string name="Contact_Support">Contact Support</string>
+    <string name="Privacy">Privacy</string>
+    <string name="Logout">Logout</string>
+    <string name="Session1">Session  </string>
+    <string name="Date1">Date </string>
+    <string name="send">Send</string>
+    <string name="Type1">Type  </string>
+    <string name="Meeting_id">Meeting ID  </string>
+    <string name="Meeting_Url">Meeting URL   </string>
+    <string name="Subject1">Subject   </string>
+    <string name="passcode">Passcode  </string>
+    <string name="CompleteBY">Complete By : </string>
+    <string name="Descreption1">Descreption  </string>
+    <string name="Class1">Class </string>
+    <string name="Comments">Comments </string>
+    <string name="Likes">Likes </string>
+    <string name="Change">Change </string>
+    <string name="Cancel">Cancel </string>
+    <string name="Add_comment">Add comment </string>
+    <string name="alert_change">Are you sure want to Change?</string>
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/timeperiodLayout"
+                android:padding="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:id="@+id/daterl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.zeyalychat.com.utils.CustomTextViewBold
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+
+
+
+                        android:text="12-May-2021"
+                        android:textColor="@color/medium_text_color"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:weightSum="4"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/daterl"
+                    android:orientation="horizontal">
+
+                    <com.zeyalychat.com.utils.CustomTextViewBold
+                        android:id="@+id/nameTxt"
+                        android:layout_weight="2"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_centerVertical="true"
+
+                        android:text="Term Fees"
+                        android:textColor="@color/full_textt_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.zeyalychat.com.utils.CustomTextViewBold
+                        android:id="@+id/morningsessiontxt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/title"
+
+
+                        android:gravity="left"
+                        android:padding="@dimen/_5sdp"
+                        android:text="600000"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="visible" />
+
+                    <com.zeyalychat.com.utils.CustomTextViewBold
+                        android:id="@+id/afternoonsessionTxt"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+
+                        android:padding="@dimen/_2sdp"
+
+
+                        android:text="12-May-2021"
+                        android:textColor="@color/full_textt_color"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="0.1sp"
+                android:layout_below="@+id/cardView"
+                android:background="@color/box_color">
+
+            </View>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</layout>

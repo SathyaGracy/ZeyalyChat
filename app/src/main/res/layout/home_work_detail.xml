@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_ash"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/action_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+
+            android:elevation="@dimen/_1sdp">
+
+
+            <RelativeLayout
+                android:id="@+id/act"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:elevation="@dimen/_2sdp">
+
+                <RelativeLayout
+
+                    android:id="@+id/backArraow"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:src="@mipmap/back_arrow_white"
+                        android:tint="@color/colorPrimary" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/backArraow">
+
+                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@android:color/transparent"
+                        android:text="@string/HomeWork"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="wrap_content"
+                android:layout_height="1sp"
+                android:layout_below="@+id/act"
+                android:background="@color/receiver">
+
+            </View>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/action_bar_layout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/view_foreground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/background_white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginTop="@dimen/_5sdp">
+
+                            <ImageView
+                                android:id="@+id/calculatorImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/cardView">
+
+                            <RelativeLayout
+                                android:id="@+id/SubjectNameRl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp">
+
+
+                                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                    android:id="@+id/SubjectTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:text="Chemistry"
+                                    android:textColor="@color/full_textt_color"
+                                    android:textSize="@dimen/_10sdp" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/addressRl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/SubjectNameRl"
+                                android:layout_marginTop="@dimen/_3sdp">
+
+
+                                <com.zeyalychat.com.utils.CustomTextViewRegular
+                                    android:id="@+id/TitleTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:text="Law of Motion"
+                                    android:textColor="@color/full_textt_color"
+                                    android:textSize="@dimen/_9sdp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true">
+
+                                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                        android:id="@+id/ContentLBL"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:maxLines="1"
+                                        android:text="Content : "
+                                        android:textColor="@color/medium_text_color"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:visibility="gone" />
+
+                                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                        android:id="@+id/ContentTxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@+id/ContentLBL"
+                                        android:text="According to Aristotle."
+                                        android:textColor="@color/medium_text_color"
+                                        android:textSize="@dimen/_10sdp" />
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp">
+
+                                <RelativeLayout
+                                    android:id="@+id/homeworkTypeRl"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible">
+
+                                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                        android:id="@+id/homeworkTypeLBL"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:maxLines="1"
+                                        android:text="Homework Type : "
+                                        android:textColor="@color/medium_text_color"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:visibility="gone" />
+
+                                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                        android:id="@+id/homeworkTypeTxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/homeworkTypeLBL"
+                                        android:ellipsize="end"
+                                        android:maxLines="1"
+                                        android:text="sat"
+                                        android:textColor="@color/medium_text_color"
+                                        android:textSize="@dimen/_10sdp" />
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/_5sdp"
+
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:visibility="visible">
+
+                                    <ImageView
+                                        android:id="@+id/CompletionDateLBL"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_2sdp"
+                                        android:src="@mipmap/date_sml"
+
+                                        />
+
+                                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                        android:id="@+id/CompletionDateTxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_toRightOf="@+id/CompletionDateLBL"
+                                        android:text="04-08-2021"
+                                        android:textColor="@color/medium_text_color"
+                                        android:textSize="@dimen/_10sdp" />
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/browser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/background_box"
+                tools:ignore="WebViewLayout">
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    tools:ignore="WebViewLayout" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/finishedRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/background_box">
+
+                <RelativeLayout
+                    android:id="@+id/mURLR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                        android:id="@+id/finishedLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Finished"
+                        android:textColor="@color/full_textt_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginRight="@dimen/_5sdp"
+
+                        android:background="@drawable/circle_finished">
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/finishedtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:text="34"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/unfinishedRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/background_box">
+
+                <RelativeLayout
+                    android:id="@+id/unmURLR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                        android:id="@+id/unfinishedLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Unfinished"
+                        android:textColor="@color/full_textt_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginRight="@dimen/_5sdp"
+
+                        android:background="@drawable/circle_unfinished">
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/unfinishedTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:text="34"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fileData"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+
+                android:layout_marginLeft="@dimen/_5sdp"
+
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/box_design"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/fileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:id="@+id/fileUploadTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/fileUploadTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/cloud"
+                        android:tint="@color/medium_text_color"
+                        android:visibility="visible" />
+
+                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                        android:id="@+id/chsfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fileUploadTxt"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/chooseFile"
+                        android:textColor="@color/medium_text_color"
+                        android:visibility="visible">
+
+                    </com.zeyalychat.com.utils.CustomSemiBoldTextview>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:visibility="visible">
+
+
+            <com.zeyalychat.com.utils.CustomButtonBold
+                android:id="@+id/fileUpload"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/button_login"
+                android:elevation="@dimen/_2sdp"
+                android:outlineAmbientShadowColor="@color/green"
+                android:outlineSpotShadowColor="@color/green"
+                android:text="@string/upload"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

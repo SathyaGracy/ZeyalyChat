@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/background_white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/ReasonRl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/ReasonLBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Reason: "
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone" />
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/ReasonTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/ReasonLBL"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Half Day Leave"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/FromToLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/FromDateRl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/FromDateLBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:visibility="gone"
+                                android:text="From Date: "
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <com.zeyalychat.com.utils.CustomTextViewRegular
+                                android:id="@+id/FromDateTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/FromDateLBL"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Wed, 18 Dec"
+                                android:textColor="@color/full_textt_color"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/pending_box"
+                            android:visibility="visible">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/ToDateLBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:visibility="gone"
+                                android:text="To Date : "
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/ToDateTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/ToDateLBL"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Awaiting"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:textColor="@color/pending"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="@dimen/_5sdp">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/TypeLBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Leave Type : "
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone" />
+
+                            <com.zeyalychat.com.utils.CustomTextViewRegular
+                                android:id="@+id/TypeTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/TypeLBL"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Casual"
+                                android:textColor="@color/shade"
+                                android:textSize="@dimen/_10sdp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/DateLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:visibility="gone">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/DateLBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Date : "
+                                android:visibility="gone"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/DateTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/DateLBL"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text=""
+                                android:textColor="@color/full_textt_color"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

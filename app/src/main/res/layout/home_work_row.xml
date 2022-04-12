@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/background_white"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/calculatorImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/cardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/SubjectNameRl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp">
+
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/SubjectTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Chemistry"
+                            android:textColor="@color/full_textt_color"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/addressRl"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_below="@+id/SubjectNameRl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <com.zeyalychat.com.utils.CustomTextViewRegular
+                            android:id="@+id/TitleTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Law of Motion"
+                            android:textColor="@color/full_textt_color"
+                            android:textSize="@dimen/_9sdp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/ContentLBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Content : "
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone" />
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/ContentTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/ContentLBL"
+
+                                android:text="According to Aristotle."
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/homeworkTypeRl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/homeworkTypeLBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:visibility="gone"
+                                android:text="Homework Type : "
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/homeworkTypeTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/homeworkTypeLBL"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text=""
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                         android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/CompletionDateLBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:src="@mipmap/date_sml"
+
+                                />
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/CompletionDateTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@+id/CompletionDateLBL"
+                                android:text="04-08-2021"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

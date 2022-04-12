@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_above="@+id/bottom_layout"
+            android:id="@+id/mainLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_ash"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/action_bar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/green"
+                    android:elevation="@dimen/_1sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:elevation="@dimen/_2sdp">
+
+                        <RelativeLayout
+
+                            android:id="@+id/backArraow"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/cart"
+                                android:tint="@color/colorPrimary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:src="@mipmap/arrow_back" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/profile_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/backArraow">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:src="@mipmap/profile"
+                                android:tint="@color/white"
+
+
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/name"
+                            android:layout_toRightOf="@+id/backArraow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:text="Name"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/chatListRecyclerview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/bg_ash"
+
+
+            android:layout_alignParentBottom="true"
+            android:elevation="@dimen/_2sdp">
+
+
+
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_60sdp"
+                android:background="@drawable/typedesign"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_40sdp">
+
+                <com.zeyalychat.com.utils.CustomEditTextviewSemiLight
+                    android:id="@+id/contentEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/Typehere"
+                    android:lines="3"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="1dp"
+                    android:textColorHint="@color/medium_text_color"
+                    android:textColor="@color/full_textt_color"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sendButtonLayout"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/circle_green"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_centerVertical="true">
+
+             <!--   android:background="@drawable/circle_white"-->
+
+
+            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Send"
+                android:visibility="gone"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_12sdp"
+              >
+
+            </com.zeyalychat.com.utils.CustomSemiBoldTextview>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/sendicon"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/colorPrimary"
+
+
+
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

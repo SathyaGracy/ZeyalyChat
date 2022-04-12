@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">வகுப்பு தோழன்</string>
+    <string name="login">உள்நுழைக</string>
+    <string name="logintocontinue">தொடர உள்நுழைக</string>
+    <string name="welcome">வரவேற்பு</string>
+    <string name="password_reset">கடவுச்சொல்லை அமைக்கவும்</string>
+    <string name="signup">கையொப்பமிடுங்கள்</string>
+    <string name="userName">பயனர் பெயர்</string>
+    <string name="EmailAddress">மின்னஞ்சல் முகவரி</string>
+    <string name="EmailId_mobileno">மின்னஞ்சல் அல்லது தொலைபேசி</string>
+    <string name="Password">கடவுச்சொல்</string>
+    <string name="Forgotpassword">கடவுச்சொல்லை மறந்துவிட்டீர்களா</string>
+    <string name="Mobile">கைபேசி எண்</string>
+    <string name="confirmPassword">கடவுச்சொல்லை உறுதிப்படுத்தவும்</string>
+    <string name="enter_user_name">பயனர் பெயரை உள்ளிடவும்</string>
+    <string name="enter_email">மின்னஞ்சலை உள்ளிடவும்</string>
+    <string name="enter_mobileNo">மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="mobile_verification">மொபைல் சரிபார்ப்பு</string>
+    <string name="mobile_number">தயவுசெய்து உங்கள் மொபைல் எண்ணை உள்ளிடவும் </string>
+    <string name="mobileNo">கைபேசி எண்</string>
+    <string name="mismatch">கடவுச்சொல் பொருந்தவில்லை</string>
+    <string name="resend_Code">குறியீட்டை மீண்டும் அனுப்பு</string>
+    <string name="invaild">தவறான சான்று</string>
+    <string name="receive_otp">OTP பெறவில்லையா?</string>
+    <string name="otp">மொபைல் எண் சரிபார்ப்புக்காக எஸ்எம்எஸ் வழியாக அணுகல் குறியீட்டை உங்களுக்கு அனுப்பியுள்ளோம்</string>
+    <string name="enter_password">கடவுச்சொல்லை உள்ளிடவும்</string>
+    <string name="enter_valid_email">தவறான மின்னஞ்சல்</string>
+    <string name="password_must_six_characters">குறைந்தது 6 எழுத்துக்களைக் கொண்டிருக்கும்</string>
+    <string name="already_have_acc">ஏற்கனவே ஒரு கணக்கு உள்ளதா?</string>
+    <string name="do_not_have_acc">உங்களிடம் கணக்கு இல்லையா?</string>
+    <string name="Please_Connect_Network">அச்சச்சோ! நீங்கள் இணைய இணைப்பில் இல்லை என்று தெரிகிறது.</string>
+    <string name="enter_otp">OTP ஐ உள்ளிடவும்</string>
+    <string name="new_password">புதிய கடவுச்சொல்</string>
+    <string name="confirm_password">கடவுச்சொல்லை உறுதிப்படுத்தவும்</string>
+    <string name="Profile">சுயவிவரம்</string>
+    <string name="Attendance">வருகை</string>
+    <string name="Result">விளைவாக</string>
+    <string name="homework">வீட்டு பாடம்</string>
+    <string name="timetable">கால அட்டவணை</string>
+    <string name="exam">தேர்வு</string>
+    <string name="fee">கட்டணம்</string>
+    <string name="holiday">விடுமுறை</string>
+    <string name="timeTable">கால அட்டவணை</string>
+    <string name="syllabus">பாடத்திட்டங்கள்</string>
+    <string name="remove_act">கணக்கை அகற்று</string>
+    <string name="remove_actl">கணக்கை \அகற்று</string>
+    <string name="manage_act">கணக்கை நிர்வகி</string>
+    <string name="tutorial">பயிற்சி</string>
+    <string name="HomeWork">வீட்டு பாடம்</string>
+    <string name="Leave">விடுங்கள்</string>
+
+
+    <string name="add_another_account">மற்றொரு கணக்கைச் சேர்க்கவும்</string>
+   <!-- <string name="google_map_key">AIzaSyAjk-phc0X5IQrbz5W0xBpUE1Q7LxKODqc</string>-->
+    <string-array name="custom_weekdays">
+        <item>M</item>
+        <item>Tu</item>
+        <item>W</item>
+        <item>Th</item>
+        <item>F</item>
+        <item>Sa</item>
+        <item>Su</item>
+    </string-array>
+
+    <string-array name="custom_months">
+        <item>JAN</item>
+        <item>Feb</item>
+        <item>MARCH</item>
+        <item>April</item>
+        <item>MAY</item>
+        <item>June</item>
+        <item>JULY</item>
+        <item>Aug</item>
+        <item>SEPT</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>DEC</item>
+    </string-array>
+
+    <string name="hi">வணக்கம்</string>
+    <string name="home">வீடு</string>
+    <string name="Chat">அரட்டை</string>
+    <string name="TimeTable">கால அட்டவணை</string>
+
+    <string name="DashBoard">டாஷ்போர்டு</string>
+    <string name="eLearning">மின் கற்றல்</string>
+    <string name="Name">பெயர்</string>
+    <string name="MorningSession">காலை அமர்வு</string>
+    <string name="NoonSession">மதியம் அமர்வு</string>
+    <string name="SelectSection">பிரிவைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="ddmmyyyy">dd/mm/yyyy</string>
+    <string name="AddAttendance">வருகை சேர்க்கவும்</string>
+    <string name="Section">பிரிவு : </string>
+    <string name="Session">அமர்வு : </string>
+
+    <string name="Date">தேதி :</string>
+    <string name="Submit">சமர்ப்பிக்கவும்</string>
+    <string name="SelectContact">தொடர்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="Total">மொத்தம் : </string>
+    <string name="AddHomeWork">வீட்டு பாடம் சேர்க்கவும்</string>
+    <string name="Type">வகை : </string>
+    <string name="Title">தலைப்பு : </string>
+    <string name="To">செய்ய :  </string>
+    <string name="Subject">பொருள் :  </string>
+    <string name="SelectHomeWork">வீட்டு பாடம் தேர்ந்தெடுக்கவும்</string>
+    <string name="SelectSubject">பொருளைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="CompletionDate">நிறைவு தேதி : </string>
+    <string name="Descreption">விளக்கம் : </string>
+    <string name="ApplyLeave">விடுப்பு விண்ணப்பிக்கவும்</string>
+    <string name="LeaveType">வகையை விடு :</string>
+    <string name="SelectLeaveType">லீவ் வகையைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="FromDate">தேதியிலிருந்து : </string>
+    <string name="ToDate">தேதிக்கு :</string>
+    <string name="Reason">காரணம் :</string>
+
+    <string name="Typehere">இங்கே தட்டச்சு செய்யவும்…</string>
+    <string name="Class">வர்க்கம் </string>
+    <string name="Section_w">பிரிவு </string>
+    <string name="Details">விவரங்கள் </string>
+    <string name="StudentID">மாணவர் அடையாளம் </string>
+    <string name="DateOfBirth">பிறந்த தேதி</string>
+    <string name="BloodGroup">இரத்த வகை</string>
+    <string name="Address">முகவரி</string>
+    <string name="Parent">பெற்றோர்</string>
+    <string name="Createpost">இடுகையை உருவாக்கவும்</string>
+    <string name="PhotosVideos">புகைப்படங்கள்/வீடியோக்கள்</string>
+    <string name="Writesomethinghere">இங்கே ஏதாவது எழுதுங்கள்…</string>
+    <string name="AddEmojis">எமோஜிகள்</string>
+    <string name="All">அனைத்து</string>
+    <string name="Post">அஞ்சல்</string>
+    <string name="Language">மொழி</string>
+    <string name="TodayTimetable">இன்றைய கால அட்டவணை</string>
+    <string name="Assignment">ஒதுக்கீடு</string>
+    <string name="ELearning">மின் கற்றல்</string>
+    <string name="Seeall">அனைத்தையும் பார்</string>
+    <string name="tamil">தமிழ்</string>
+    <string name="english">ஆங்கிலம்</string>
+
+
+
+    <string name="Add_exam">தேர்வைச் சேர்க்கவும்</string>
+    <string name="TotalMarks">மொத்த மதிப்பெண்கள்</string>
+    <string name="ExamRoom">தேர்வு அறை</string>
+    <string name="timefrom">ஆரம்பிக்கும் நேரம்</string>
+    <string name="timeto">முடிவு \n நேரம்</string>
+    <string name="questions">கேள்விகள்</string>
+    <string name="chooseFile">ஒரு கோப்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="File">கோப்பு</string>
+    <string name="uploadHomeWork">வீட்டுப்பாடத்தைப் பதிவேற்றவும்</string>
+    <string name="upload">பதிவேற்றவும் </string>
+    <string name="Attachments">இணைப்புகள்</string>
+    <string name="Min">குறைந்தபட்ச மார்க்</string>
+    <string name="Max">அதிகபட்ச மதிப்பெண்கள்</string>
+    <string name="exam_procedure">தேர்வு நடைமுறை</string>
+    <string name="time">நேரம்</string>
+
+    <string name="app_info">ஆடியோவை பதிவு செய்வதற்கான மாதிரி பயன்பாடு இது.\n\nபதிவைத் தொடங்க அழுத்தவும்\&quot;பதிவு\&quot; பொத்தானை, அழுத்தி பதிவு செய்வதை நிறுத்த வேண்டும் \&quot;நிறுத்து\&quot; பொத்தானை.</string>
+
+    <string name="choose_format_title">ஆடியோ வடிவமைப்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="start_recording">பதிவு</string>
+    <string name="stop_recording">நிறுத்து</string>
+    <string name="audio_format">வடிவம்</string>
+    <string name="Contact_Support">ஆதரவைத் தொடர்பு கொள்ளவும்</string>
+    <string name="Privacy">தனியுரிமை</string>
+    <string name="Logout">வெளியேறு</string>
+    <string name="Session1">அமர்வு  </string>
+    <string name="Date1">தேதி </string>
+    <string name="send">அனுப்பு</string>
+    <string name="Type1">வகை  </string>
+    <string name="Meeting_id">சந்திப்பு ஐடி  </string>
+    <string name="Meeting_Url">சந்திப்பு URL   </string>
+    <string name="Subject1">பொருள்   </string>
+    <string name="passcode">கடவுக்குறியீடு  </string>
+    <string name="CompleteBY">மூலம் முடிக்கவும் : </string>
+    <string name="Descreption1">விளக்கம்  </string>
+    <string name="Class1">வர்க்கம் </string>
+
+    <string name="audio">ஆடியோ</string>
+    <string name="sms">எஸ்எம்எஸ்</string>
+    <string name="See_all">அனைத்தையும் பார்</string>
+    <string name="App">செயலி</string>
+    <string name="Support">ஆதரவு</string>
+    <string name="Account_Settings">கணக்கு அமைப்புகள்</string>
+    <string name="Notification_Sound">அறிவிப்பு &amp; ஒலி</string>
+    <string name="Meeting">கூட்டங்கள்</string>
+
+    <string name="Comments">கருத்துகள் </string>
+    <string name="Likes">பிடிக்கும் </string>
+    <string name="Add_comment">கருத்தைச் சேர்க்கவும் </string>
+    <string name="alert_change">நீங்கள் நிச்சயமாக மாற்ற விரும்புகிறீர்களா?</string>
+    <string name="Change">மாற்றவும் </string>
+    <string name="Cancel">ரத்து செய் </string>
+</resources>

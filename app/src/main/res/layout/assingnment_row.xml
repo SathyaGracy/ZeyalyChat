@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@drawable/btn_lite_ash"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/cardRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+
+            android:orientation="vertical">
+
+            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                android:id="@+id/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="DeadLine"
+                android:textColor="@color/medium_text_color"
+                android:textSize="@dimen/_10sdp" />
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_below="@+id/head"
+                android:id="@+id/dateRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zeyalychat.com.utils.CustomTextViewRegular
+                    android:layout_width="@dimen/_5sdp"
+                    android:id="@+id/circle_dead"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/circle_green"
+                    android:layout_centerVertical="true"
+
+                    android:layout_height="@dimen/_5sdp">
+
+                </com.zeyalychat.com.utils.CustomTextViewRegular>
+                <com.zeyalychat.com.utils.CustomTextViewRegular
+                    android:id="@+id/date"
+                    android:layout_toRightOf="@+id/circle_dead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginRight="@dimen/_10sdp"
+
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="3 days Left"
+                    android:textColor="@color/full_textt_color"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+
+
+            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateRl"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Proofread the Biology Assignment."
+                android:textColor="@color/full_textt_color"
+                android:textSize="@dimen/_11sdp" />
+
+            <com.zeyalychat.com.utils.CustomTextViewRegular
+                android:id="@+id/txt_subtitlte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_5sdp"
+
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Biology"
+                android:textColor="@color/full_textt_color"
+                android:textSize="@dimen/_10sdp" />
+
+            <RelativeLayout
+                android:id="@+id/moreRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/more"
+                    android:tint="@color/colorPrimary">
+
+                </ImageView>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

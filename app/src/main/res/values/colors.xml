@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="green">#17AC5A</color>
+    <color name="finished">#16D686</color>
+    <color name="unfinished">#FE4E4E</color>
+    <color name="green_x">#5917AC5A</color>
+    <color name="dark_green">#128948</color>
+    <color name="background_color">#F8F8F8</color>
+    <color name="dark_red">#FE5886</color>
+    <color name="lite_text_color">#687383</color>
+    <color name="medium_text_color">#949494</color>
+    <!--<color name="full_textt_color">#222831</color>-->
+    <color name="full_textt_color">#141414</color>
+    <color name="black">#0d0f13</color>
+    <color name="litecolor">#f1f1f3</color>
+    <color name="white">#ffffff</color>
+    <color name="subcontebt_txt_color">#757E90</color>
+    <color name="add_bank_color">#C5CAD4</color>
+    <color name="txt_bold_clor">#333333</color>
+    <color name="ViewColor">#f2f2f2</color>
+    <color name="hintcolor">#D9DBDA</color>
+    <color name="box_color">#D8D8D8</color>
+    <color name="menu_background">#FCFCFE</color>
+    <color name="receiver">#F0F0F0</color>
+    <color name="sender">#f8f7e5</color>
+    <color name="grey_border_color">#C5C6C6</color>
+    <color name="purple">#9B5BD5</color>
+    <color name="shade">#ff6f69</color>
+    <color name="greeeen">#37C5AB</color>
+    <color name="yellow">#ffeead</color>
+    <color name="back_ground">#f4f4f4</color>
+    <color name="red_color">#FE5886</color>
+    <color name="gre">#00797d</color>
+    <color name="completed">#196619</color>
+    <color name="litegreen">#8fbc77</color>
+    <color name="liteshade">#0053b5</color>
+
+    <color name="txt_medium_color">#A8ACBB</color>
+    <color name="syl_yellow">#fd8600</color>
+    <color name="syl_red">#fe1621</color>
+    <color name="syl_pink">#fe366d</color>
+    <color name="syl_purple">#a7459f</color>
+    <color name="syl_blue">#1667ff</color>
+    <color name="syl_liteblue">#0fc7c5</color>
+    <color name="syl_litegreen">#66e17b</color>
+    <color name="syl_ash">#a5a5a5</color>
+    <color name="bg_ash">#F5F6F8</color>
+
+
+    <array name="random">
+        <item>@color/purple</item>
+        <item>@color/shade</item>
+        <item>@color/greeeen</item>
+        <item>@color/red_color</item>
+        <item>@color/green</item>
+        <item>@color/gre</item>
+        <item>@color/liteshade</item>
+        <item>@color/completed</item>
+
+    </array>
+    <array name="sylrandom">
+        <item>@color/syl_red</item>
+        <item>@color/syl_red</item>
+        <item>@color/syl_pink</item>
+        <item>@color/syl_purple</item>
+        <item>@color/syl_blue</item>
+        <item>@color/syl_liteblue</item>
+        <item>@color/syl_litegreen</item>
+        <item>@color/syl_ash</item>
+
+    </array>
+    <array name="randomlite">
+        <item>@color/purple_rlite</item>
+        <item>@color/shade_rlite</item>
+        <item>@color/greeeen_rlite</item>
+        <item>@color/completed_rlite</item>
+        <item>@color/red_color_rlite</item>
+        <item>@color/gre_rlite</item>
+        <item>@color/litegreen_rlite</item>
+        <item>@color/liteshade_rlite</item>
+        <item>@color/dark_green_rlite</item>
+        <item>@color/black_rlite</item>
+        <item>@color/bluer</item>
+
+    </array>
+    <color name="purple_lite">#0D9B5BD5</color>
+    <color name="shade_lite">#0Dff6f69</color>
+    <color name="greeeen_lite">#0D37C5AB</color>
+    <color name="red_color_lite">#0DFE5886</color>
+    <color name="gre_lite">#0D00797d</color>
+    <color name="completed_lite">#0D196619</color>
+    <color name="litegreen_lite">#0D8fbc77</color>
+    <color name="liteshade_lite">#0D0053b5</color>
+    <color name="dark_green_lite">#0D128948</color>
+    <color name="black_lite">#0D000000</color>
+    <color name="blue">#D8F1FF</color>
+
+
+    <color name="purple_rlite">#599B5BD5</color>
+    <color name="shade_rlite">#59ff6f69</color>
+    <color name="greeeen_rlite">#5937C5AB</color>
+    <color name="red_color_rlite">#59FE5886</color>
+    <color name="gre_rlite">#5900797d</color>
+    <color name="completed_rlite">#59196619</color>
+    <color name="litegreen_rlite">#598fbc77</color>
+    <color name="liteshade_rlite">#590053b5</color>
+    <color name="dark_green_rlite">#59128948</color>
+    <color name="black_rlite">#59000000</color>
+    <color name="bluer">#59D8F1FF</color>
+    <color name="un_check_color">#C7D2E3</color>
+    <color name="pending_yellow">#40FCD53B</color>
+    <color name="paid_green">#4016D686</color>
+    <color name="overdue_red">#40FE4E4E</color>
+    <color name="pending">#E1B300</color>
+    <color name="paid">#16D686</color>
+    <color name="overdue">#FE4E4E</color>
+    <color name="greybackground_color">#F8F9FC</color>
+    <color name="txt_color">#757778</color>
+</resources>

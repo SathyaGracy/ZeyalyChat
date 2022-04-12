@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/background_box">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/view_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@color/green"
+
+
+                    android:visibility="gone">
+
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/examday"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_40sdp"
+
+
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/box_design_green"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_3sdp">
+
+                        <com.zeyalychat.com.utils.CustomTextViewBold
+                            android:id="@+id/day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+
+
+                            android:text="24"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="visible" />
+
+                        <com.zeyalychat.com.utils.CustomTextViewBold
+                            android:id="@+id/month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/day"
+                            android:layout_centerHorizontal="true"
+                            android:text="May"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/row_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/examday">
+
+
+                    <RelativeLayout
+                        android:id="@+id/TitleL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/titleLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12-7-2021"
+                                android:textColor="@color/full_textt_color"
+                                android:textSize="@dimen/_11sdp" />
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@+id/title"
+                                android:text="12-7-2021"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/examlayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone">
+
+
+                            <ImageView
+                                android:id="@+id/clock"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/clock"
+                                android:tint="@color/medium_text_color">
+
+                            </ImageView>
+
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+
+
+                                android:layout_toRightOf="@+id/clock"
+                                android:gravity="end"
+
+                                android:text="10:00 am - 11:45 am"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TitleL"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/lay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/starttime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Start Time:"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp"
+                                android:tint="@color/medium_text_color">
+
+                            </com.zeyalychat.com.utils.CustomSemiBoldTextview>
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/starttimeTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+
+
+                                android:layout_toRightOf="@+id/starttime"
+
+                                android:text="200"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/roomlayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true">
+
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/endtime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="End Time:"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp"
+                                android:tint="@color/medium_text_color">
+
+                            </com.zeyalychat.com.utils.CustomSemiBoldTextview>
+
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/endtimeTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+
+
+                                android:layout_toRightOf="@+id/endtime"
+                                android:gravity="end"
+
+                                android:text="8"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2sp"
+            android:layout_below="@+id/view_foreground"
+            android:background="@color/box_color"
+            android:visibility="gone">
+
+        </View>
+
+
+    </RelativeLayout>
+
+
+</layout>

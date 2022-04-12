@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+
+            <RelativeLayout
+                android:id="@+id/view_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@color/green"
+
+
+                    android:visibility="gone">
+
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/examday"
+                    android:background="@drawable/box_design_green"
+
+
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true">
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                      android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.zeyalychat.com.utils.CustomTextViewBold
+                            android:id="@+id/day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+
+
+                            android:text="24"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="visible" />
+
+                        <com.zeyalychat.com.utils.CustomTextViewBold
+                            android:id="@+id/month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/day"
+                            android:layout_centerHorizontal="true"
+                            android:text="May"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_10sdp"
+
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/examday">
+
+                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                        android:id="@+id/Syllabusname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/_5sdp"
+
+                        android:text="CHEMISTRY"
+                        android:textColor="@color/full_textt_color"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="visible" />
+
+                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                        android:id="@+id/Descriptionname"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Syllabusname"
+
+                        android:layout_marginTop="@dimen/_5sdp"
+
+                        android:text="CHEMISTRY"
+                        android:textColor="@color/medium_text_color"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/examlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp">
+
+
+                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                        android:id="@+id/min_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:gravity="end"
+
+                        android:text="40/100"
+                        android:textColor="@color/medium_text_color"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:background="@color/box_color"
+            android:layout_height="0.2sp">
+
+        </View>
+
+
+    </RelativeLayout>
+
+
+</layout>

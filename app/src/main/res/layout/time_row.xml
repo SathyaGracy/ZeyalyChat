@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/btn_lite_ash">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                android:padding="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/calculatorImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/calculator">
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_toRightOf="@+id/cardView">
+
+
+                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                    android:id="@+id/subjectname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHEMISTRY"
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:textColor="@color/full_textt_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/timeP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subjectname"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_2sdp">
+
+                    <ImageView
+                        android:id="@+id/clckId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/clock">
+
+                    </ImageView>
+
+                    <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                        android:id="@+id/timeperiod"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_toRightOf="@+id/clckId"
+
+                        android:text="12 am -1 pm"
+                        android:textColor="@color/subcontebt_txt_color"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+
+                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                    android:id="@+id/staffname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/timeP"
+                    android:layout_marginTop="@dimen/_2sdp"
+
+                    android:text="Acc no:  **** **** **** 1234"
+                    android:textColor="@color/subcontebt_txt_color"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</layout>

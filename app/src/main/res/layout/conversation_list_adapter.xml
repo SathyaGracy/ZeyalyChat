@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/receiverLayout"
+            android:layout_marginTop="@dimen/_5sdp"
+
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/recrl"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/receiver_design"
+                android:layout_height="wrap_content">
+
+                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                    android:id="@+id/receiverMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Hi ... How are You??"
+                    android:textColor="@color/full_textt_color"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                android:id="@+id/time"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_below="@+id/recrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="17:10"
+                android:textColor="@color/medium_text_color"
+                android:textSize="@dimen/_8sdp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/senderLayout"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/sendRl"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/sender_design"
+                android:layout_height="wrap_content">
+
+                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                    android:id="@+id/senderMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Hi ... How are You??"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                android:id="@+id/sendertime"
+
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/sendRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+
+                android:text="17:10"
+                android:textColor="@color/medium_text_color"
+                android:textSize="@dimen/_8sdp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

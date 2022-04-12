@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:id="@+id/logo"
+                            android:visibility="gone"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:src="@mipmap/logo" />
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/logo"
+                            android:text="@string/app_name"
+                            android:textColor="@color/full_textt_color"
+                            android:textSize="@dimen/_16sdp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/title_layout"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp">
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:layout_width="wrap_content"
+                            android:id="@+id/welcomeTxt"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/welcome"
+                            android:textColor="@color/full_textt_color"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/welcomeTxt"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:text="@string/loginAct"
+                            android:textColor="@color/medium_text_color"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_layout"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/user_name_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <RelativeLayout
+                                android:id="@+id/user_edt_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/title_username"
+
+                                android:layout_marginTop="@dimen/_5sdp"
+
+                                android:background="@drawable/box_design">
+
+                                <com.zeyalychat.com.utils.CustomEditTextviewSemiLight
+                                    android:id="@+id/username_edt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="geo@gmail.com"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/full_textt_color"
+                                    android:textColorHint="@color/hintcolor"
+                                    android:textSize="@dimen/_12sdp" />
+                            </RelativeLayout>
+
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/title_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/EmailAddress"
+                                android:textColor="@color/full_textt_color"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/error_txt_username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/user_edt_layout"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@android:color/transparent"
+                                android:text="User name"
+                                android:textColor="@color/dark_red"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/forgot_lt_R"
+
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_below="@+id/bottom_layout">
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="@string/Forgotpassword"
+                                android:textColor="@color/full_textt_color"
+                                android:textSize="@dimen/_10sdp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/password_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_name_layout"
+                            android:layout_marginTop="@dimen/_8sdp">
+
+                            <RelativeLayout
+                                android:id="@+id/password_edt_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_below="@+id/title_password"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/box_design">
+
+                                <RelativeLayout
+                                    android:id="@+id/hide_show_layout"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true">
+
+                                    <ImageView
+                                        android:id="@+id/hide_show_img"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:layout_marginRight="@dimen/_8sdp"
+
+                                        android:src="@mipmap/hide_password" />
+                                </RelativeLayout>
+
+                                <com.zeyalychat.com.utils.CustomEditTextviewSemiLight
+                                    android:id="@+id/password_edt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:layout_toStartOf="@+id/hide_show_layout"
+                                    android:layout_toLeftOf="@+id/hide_show_layout"
+                                    android:background="@android:color/transparent"
+                                    android:hint="••••••••••••"
+                                    android:inputType="textPassword"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:textColor="@color/full_textt_color"
+                                    android:textColorHint="@color/hintcolor"
+                                    android:textSize="@dimen/_12sdp" />
+                            </RelativeLayout>
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/title_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Password"
+                                android:textColor="@color/full_textt_color"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/error_txt_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/password_edt_layout"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@android:color/transparent"
+                                android:text="User Name"
+                                android:textColor="@color/dark_red"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/bottom_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/password_layout"
+
+                            android:layout_marginBottom="@dimen/_10sdp">
+
+
+                            <com.zeyalychat.com.utils.CustomButtonBold
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_centerInParent="true"
+                                android:text="@string/login"
+                                android:textAllCaps="false"
+                                android:background="@drawable/button_login"
+                                android:textColor="@color/white"
+                                android:id="@+id/signin_layout"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginRight="@dimen/_20sdp"
+                                android:elevation="@dimen/_2sdp"
+                                android:outlineAmbientShadowColor="@color/green"
+                                android:outlineSpotShadowColor="@color/green"
+                                android:textSize="@dimen/_12sdp" />
+
+
+
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/signup_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerHorizontal="true"
+                                android:padding="@dimen/_5sdp">
+
+                                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                    android:id="@+id/text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="@string/do_not_have_acc"
+                                    android:textColor="@color/full_textt_color"
+                                    android:textSize="@dimen/_10sdp" />
+
+
+                                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                    android:id="@+id/signIN"
+                                    android:layout_toRightOf="@+id/text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="@string/signup"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/_10sdp" />
+
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+
+
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

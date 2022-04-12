@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <RelativeLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+
+
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/timeperiodLayout"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/cardLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/view_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/v1"
+                            android:layout_width="@dimen/_5sdp"
+
+                            android:layout_height="@dimen/_5sdp"
+
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@drawable/circle_fulltext">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mainRl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/view_layout"
+                        android:visibility="visible">
+
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/Syllabusname"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+
+                            android:padding="@dimen/_2sdp"
+                            android:text="CHEMISTRY"
+                            android:textColor="@color/full_textt_color"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="gone" />
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/Descriptionname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/Syllabusname"
+
+
+                            android:text="CHEMISTRY"
+                            android:textColor="@color/medium_text_color"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/v2"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_width="@dimen/_2sdp"
+
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_below="@+id/mainRl"
+                        android:layout_marginLeft="@dimen/_11sdp"
+                        android:background="@color/green">
+
+                    </View>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</layout>

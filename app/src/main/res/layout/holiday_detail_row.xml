@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+
+            <RelativeLayout
+                android:id="@+id/cardLayout"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/btn_lite_ash"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/view_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/v1"
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_8sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@color/green"
+
+
+                        android:visibility="gone">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/view_layout"
+                    android:visibility="visible">
+                    <RelativeLayout
+                        android:id="@+id/examlayout"
+                        android:visibility="visible"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/examday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:text="1"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_11sdp"
+                            android:visibility="visible" />
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/exammonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/examday"
+                            android:text="Day"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_11sdp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        >
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/Syllabusname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+
+                            android:text="CHEMISTRY"
+                            android:textColor="@color/full_textt_color"
+                            android:textSize="@dimen/_11sdp"
+                            android:visibility="visible" />
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_below="@+id/Syllabusname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/cal"
+                                android:tint="@color/medium_text_color"
+                                android:layout_width="wrap_content"
+                                android:src="@mipmap/date_sml"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content">
+
+                            </ImageView>
+                            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                                android:id="@+id/Descriptionname"
+                                android:layout_toRightOf="@+id/cal"
+                                android:layout_marginLeft="@dimen/_5sdp"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+
+
+
+                                android:text="CHEMISTRY"
+                                android:textColor="@color/medium_text_color"
+                                android:textSize="@dimen/_10sdp" />
+
+                        </RelativeLayout>
+
+
+                        <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                            android:id="@+id/min_max"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/_8sdp"
+
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+
+                            android:text="40/100"
+                            android:visibility="gone"
+                            android:textColor="@color/full_textt_color"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</layout>

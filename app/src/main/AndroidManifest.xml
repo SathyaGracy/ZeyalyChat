@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zeyalychat.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.zeyalychat.com.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.zeyalychat.com.activity.SplashScreen"
+            android:theme="@style/NoActionBar_Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.SignUpActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.LoginActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.MainActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.ResetPasswordActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.VerifyPhoneActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.MobileVerficationActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.ForgotPasswordActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.LogInActivityNew"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.ProfileActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.MessageListActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.MessageConversationActivity"
+            android:theme="@style/NoActionBar_Theme"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.ContactListActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.TimeTableActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.SyllabusActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.SyllabusDetailActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.MapsActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.ExamActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.HolidayActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.FeesListActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.FeeSubListActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.RemoveAccountActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.VideoListActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.VideoViewActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.TimeLineListActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.HomeWork"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.HomeWorkCreate"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.LeaveActivity"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.LeaveCreateActiviity"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.AttendanceActivity"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.AttendanceCreate"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.ExamCreate"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.HomeWorkDetailActivity"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.ExamDetailViewActivity"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.Meeting"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.MeetingCreate"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.MeetingDetailActivity"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.RecorderActivity"
+            android:theme="@style/NoActionBar_Theme" />
+        <activity
+            android:name="com.zeyalychat.com.activity.CompletedActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.PendingActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.ViewFileActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.AudioCallSentActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.AudioActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.SmsSentActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <activity
+            android:name="com.zeyalychat.com.activity.SmsActivity"
+            android:theme="@style/NoActionBar_Theme"></activity>
+        <!-- <meta-data
+             android:name="com.google.android.geo.API_KEY"
+             android:value="@string/google_map_key" />-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.mydomain.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

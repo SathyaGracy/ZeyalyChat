@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "502891027228",
+    "firebase_url": "https://classmate-fe38e.firebaseio.com",
+    "project_id": "classmate-fe38e",
+    "storage_bucket": "classmate-fe38e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502891027228:android:5656732966210bab3178d9",
+        "android_client_info": {
+          "package_name": "com.school.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502891027228-jptfsol8snvl1joiv2euf2911lsrt25e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.school.com",
+            "certificate_hash": "02dd5eea6773c97ace7a7c956fd07bc41e08c690"
+          }
+        },
+        {
+          "client_id": "502891027228-9glasl5vde48bhv24ce1bpicg830gpf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg5LkN2oj7IFI8nY4ZQ146SM63UyijmnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502891027228-9glasl5vde48bhv24ce1bpicg830gpf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

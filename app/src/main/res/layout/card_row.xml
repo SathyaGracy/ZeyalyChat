@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_100sdp"
+
+       >
+
+            <RelativeLayout
+                android:id="@+id/cardRl"
+                android:background="@drawable/button_design_card_green"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="English"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                    android:layout_below="@+id/txt_title"
+                    android:id="@+id/txt_subtitlte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Poem"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+                <RelativeLayout
+                    android:id="@+id/moreRl"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+                        android:tint="@color/colorPrimary"
+                        android:src="@mipmap/more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                </RelativeLayout>
+
+
+                <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                   android:layout_marginRight="@dimen/_10sdp"
+                    android:id="@+id/date"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Poem"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+</layout>

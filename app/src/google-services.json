@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "940647585680",
+    "project_id": "classmate-61b64",
+    "storage_bucket": "classmate-61b64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940647585680:android:8b8337718d790a3251c515",
+        "android_client_info": {
+          "package_name": "com.zeyalyclassmate.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940647585680-mnj41d91h0qslgdbm0j93ba3el034qug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClTFiE0mlnloE4QIzZ15wdMwVr9r06cdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940647585680-mnj41d91h0qslgdbm0j93ba3el034qug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

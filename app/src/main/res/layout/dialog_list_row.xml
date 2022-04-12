@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/stLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zeyalychat.com.utils.CustomSemiBoldTextview
+                android:id="@+id/textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:hint="Start Date"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/full_textt_color"
+                android:textColorHint="@color/medium_text_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:layout_below="@+id/textDate"
+                android:background="@color/ViewColor">
+
+            </View>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
